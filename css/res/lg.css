@@ -1,0 +1,11 @@
+@media (min-width: 992px) {
+    p{
+      font-size: 2rem;
+    }
+    .nosotros p{
+        font-size: 1.5rem;
+    }
+    .nosotros h1{
+        font-size: 2.5rem;
+    }
+  }
