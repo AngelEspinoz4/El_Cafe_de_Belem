@@ -17,6 +17,16 @@
     font-family: 'cabinI';
     src: url("../fonts/Cabin-Italic-VariableFont_wdth\,wght.ttf");
 }
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
 
 body {
     background-color: #1c2826ea;
@@ -132,6 +142,23 @@ hr {
     background-color: #FFBD6E;
     transition: all 0.5s;
 }
+.ver {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido /
+    justify-content: center; / Centra horizontalmente el contenido */
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    background-color: #1c2826;
+    color: #fff;
+    height: 60px;
+}
+
+.ver:hover {
+    background-color: #FFBD6E;
+    transition: all 0.5s;
+}
 
 .promo {
     font-size: 2rem;
@@ -140,7 +167,7 @@ hr {
 
 
 
-
+/*Popup*/
 
 .window-notice {
     background: rgba(33, 41, 52, .85);
@@ -151,29 +178,45 @@ hr {
     display: flex;
     position: fixed;
     z-index: 999;
-    animation: popup 2s linear 1;
 }
 
-.window-notice .content {
-    background: #fff;
-    border-radius: 2px;
-    box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
-    box-sizing: content-box;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    max-width: 600px;
-    min-width: 320px !important;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    padding: 2rem;
-    font-size: 1.3rem;
-}
+    .window-notice .content {
+        background: #fff;
+        border-radius: 2px;
+        box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
+        box-sizing: content-box;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        max-width: 600px;
+        min-width: 320px !important;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        padding: 2rem;
+        font-size: 1.3rem;
+    }
 
-.div_hide {
-    opacity: 0;
-}
+    .contenedor-aceptar{
+        text-align: right;
+    }
+
+        .aceptar {
+            font-size: 1.2rem;
+            border-radius: 10px;
+            border: none;
+            padding: 5px;
+            background-color: #1c2826;
+            text-decoration: none;
+            padding: 10px;
+            color: #fff;
+        }
+
+        .aceptar:hover {
+            background-color: #FFBD6E;
+            transition: all 0.5s;
+            color: #1c2826;
+        }
 
 @keyframes popup {
     0% {
